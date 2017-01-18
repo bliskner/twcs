@@ -27,6 +27,7 @@ git clone https://github.com/jeffjirsa/twcs/
 Switch to the right version (for newest 2.1 release, for example):
 
 ```
+git --fetch --tags
 git checkout origin cassandra-2.1 
 ```
 
@@ -39,6 +40,11 @@ mvn package
 ```
 
 The resulting jar will be placed in target/, copy it to the classpath of your cassandra server.
+
+```
+## for ubuntu/debian that would be
+/usr/share/cassandra/lib/
+```
 
 Enabling
 ----------
